@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 import pandas as pd
 import numpy as np
@@ -82,4 +83,6 @@ def index():
                            input_data=input_data, airlines=AIRLINES)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    debug = os.environ.get("FLASK_ENV") == "development"
+    app.run(debug=debug, host="0.0.0.0", port=port)
