@@ -147,7 +147,6 @@ python flight_delay_ml.py
 
 ---
 
-## Screenshots
 
 ### Web App
 ```
