@@ -174,9 +174,3 @@ python flight_delay_ml.py
 ```
 
 ---
-
-## License
-
-MIT License — free to use and modify.
-
-Built with Python + Flask + scikit-learn.
